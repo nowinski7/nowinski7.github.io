@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aprende - Hiszpański → Polski</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game">
+  <div class="badge">Hiszpański · Polski</div>
+  <h1>Aprende español</h1>
+  <p class="subtitle">Przetłumacz słówko na polski</p>
+
+  <div id="playArea">
+    <div class="stats">
+      <div><span class="stat-label">Pytanie</span><b><span id="qNum">1</span>/<span id="qTotal">10</span></b></div>
+      <div><span class="stat-label">Wynik</span><b id="score">0</b></div>
+    </div>
+
+    <div class="progress"><div class="progress-bar" id="progressBar" style="width:10%"></div></div>
+
+    <div class="word-card">
+      <div class="word-label">Hiszpański</div>
+      <div class="word" id="esWord">hola</div>
+    </div>
+
+    <div class="answer-form">
+      <input type="text" class="answer-input" id="answerInput" placeholder="Wpisz tłumaczenie po polsku..." autocomplete="off">
+      <button class="submit" id="submitBtn">Sprawdź</button>
+    </div>
+
+    <div class="feedback" id="feedback"></div>
+
+    <button class="next" id="nextBtn" disabled>Dalej →</button>
+  </div>
+
+  <div class="final" id="finalScreen">
+    <h2>Koniec gry!</h2>
+    <div class="score-big" id="finalScore">0/10</div>
+    <p id="finalMsg">Świetna robota!</p>
+    <button class="next" id="restartBtn" style="opacity:1;">Zagraj jeszcze raz</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
